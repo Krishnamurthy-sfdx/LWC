@@ -1,10 +1,11 @@
-public with sharing class AccountController {
+public class AccountController {
 
     //account controller class
     @AuraEnabled(cacheable = true)
-    public static List<Account> getAccounts()
+    public static List<Account> getAccounts(String recordId)
     {
-            return [SELECT Id, Name, Industry, Rating, Website, AnnualRevenue FROM Account LIMIT 25];
+           List<Account> acc = [SELECT Name, Industry, Rating, Website FROM Account WHERE Id = :recordId];
+           return acc;
     }
 
     
