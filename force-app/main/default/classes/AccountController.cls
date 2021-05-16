@@ -1,5 +1,6 @@
 public with sharing class AccountController {
 
+    //account controller class
     @AuraEnabled(cacheable = true)
     public static List<Account> getAccounts()
     {
