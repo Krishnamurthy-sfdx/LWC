@@ -1,0 +1,16 @@
+<apex:page controller="invoiceController">
+    <apex:form >
+        <apex:pageBlock title="Invoice" id="new">
+            <apex:pageBlockSection id="section1">
+                <apex:pageBlockTable value="{!Invoice}" var="i" id="pageb">
+                   <apex:column value="{!i.Name}" >
+                    <apex:facet name="header">
+                        <apex:commandLink action="{!methodOne}" reRender="new">Name</apex:commandLink>
+                </apex:facet>
+                    </apex:column>
+                    <apex:column value="{!i.Total_Amount__c}"/>
+                </apex:pageBlockTable>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

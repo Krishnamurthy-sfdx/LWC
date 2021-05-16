@@ -1,0 +1,71 @@
+<template>
+  <div class="slds-p-bottom_large slds-p-left_large">
+    <div class="hello">
+      <lightning-record-edit-form
+        object-api-name="Invoice__c"
+        id="createInvoiceForm"
+        onsubmit={handleSubmit}
+        onsuccess={handleSuccess}
+      >
+        <lightning-messages></lightning-messages>
+        <lightning-input-field field-name="Name"></lightning-input-field>
+        <lightning-input-field
+          field-name="Total_Amount__c"
+          required
+        ></lightning-input-field>
+        <lightning-input-field field-name="Password__c"></lightning-input-field>
+        <lightning-button
+          class="slds-p-right_x-small"
+          type="submit"
+          label="Submit"
+        ></lightning-button>
+        <lightning-button
+          class="slds-m-top_small"
+          label="Reset"
+          onclick={handleReset}
+        ></lightning-button>
+      </lightning-record-edit-form>
+    </div>
+  </div>
+
+  <template if:true={invoice.data}>
+    <div>
+      <lightning-layout-item padding="around-small">
+        <div class="slds-size_1-of-2">
+          <div class="slds-box">
+            <h1>Invoice</h1>
+            <div class="main">
+              <div>
+                <label>Name:</label>
+              </div>
+              <div>
+                <label>{name}</label>
+              </div>
+            </div>
+            <br />
+            <br />
+            <div class="main1">
+              <div>
+                <label>Amount:</label>
+              </div>
+              <div>
+                <label>{amount}</label>
+              </div>
+            </div>
+            <br />
+            <br />
+            <div class="main2">
+              <div>
+                <label>Password:</label>
+              </div>
+              <div>
+                <label>{password}</label>
+              </div>
+            </div>
+            <br />
+          </div>
+        </div>
+      </lightning-layout-item>
+    </div>
+  </template>
+</template>

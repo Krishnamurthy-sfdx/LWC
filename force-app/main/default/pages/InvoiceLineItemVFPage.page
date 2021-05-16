@@ -1,0 +1,15 @@
+<apex:page standardController="Account" extensions="i3" lightningStylesheets="true">
+    <apex:form >
+        <apex:pageBlock title="Account">
+            <apex:pageMessages ></apex:pageMessages>
+            <apex:pageBlockButtons location="bottom">
+                    <apex:commandButton value="Save" action="{!save}"></apex:commandButton>
+                </apex:pageBlockButtons>
+            <apex:pageBlockSection >
+                <apex:inputField value="{!ilist.Name}"></apex:inputField>
+                <apex:inputField value="{!ilist.Description}"></apex:inputField>
+    
+            </apex:pageBlockSection> 
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

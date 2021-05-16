@@ -1,0 +1,26 @@
+<template>
+
+
+
+<lightning-button label="Retreive Accounts" title="Non-primary action" 
+onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
+
+
+<template for:each={result} for:item="account" >
+    <li key ={account.Id}>
+    
+    <lightning-card variant="Narrow"  title={account.Name} icon-name="standard:account">
+        {account.Website}
+         
+
+
+        
+    
+    </lightning-card>
+    
+</li>
+    
+</template>
+
+
+</template>

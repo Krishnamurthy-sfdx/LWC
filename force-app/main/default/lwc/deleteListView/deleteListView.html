@@ -1,0 +1,23 @@
+<template>
+ 
+  <lightning-card
+    title="Account List View"
+    icon-name="standard:record"
+  ></lightning-card>
+  <div class="slds-m-around_medium">
+    <lightning-datatable
+      key-field="id"
+      data={data}
+      columns={columns}
+      onrowselection={getrowId}
+    >
+    </lightning-datatable>
+  
+    <lightning-button
+      icon-name="utility:delete"
+      label="Delete"
+      title="Delete"
+      onclick={handleClick}
+    ></lightning-button>
+  </div>
+</template>

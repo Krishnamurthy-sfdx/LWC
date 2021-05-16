@@ -1,0 +1,28 @@
+:host div {
+  color: darkblue;
+  font-size: 13px;
+}
+
+:host h1{
+  font-size: 30px;
+  margin: 10px;
+  border:1px solid darkblue;
+}
+
+
+
+.main div{
+  width: 30%; 
+  float: left;
+margin-left: 20px;
+}
+.main1 div{
+  width: 30%; 
+  float: left;
+margin-left: 20px;
+}
+.main2 div{
+  width: 30%; 
+  float: left;
+margin-left: 20px;
+}
