@@ -12,7 +12,7 @@ wiredAccount ({error, data}) {
     if (error) {
         console.log('Something went wrong', error.body.value)
     } else if (data) {
-        this.record = data;
+        this.record = data[0];
         console.log(this.record);
     }
 }

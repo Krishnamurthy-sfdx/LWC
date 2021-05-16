@@ -1,10 +1,11 @@
 <template>
-    <lightning-card title="My Account Record" icon-name="standard:account">
+    <lightning-card title="Account Record using wire method" icon-name="standard:account">
             <div class="slds-m-around_medium" if:true={record}>
-                <p>Account Name : {myName}</p>
-                <p>Industry : {myIndustry}</p>
-                <p>Rating : {myRating}</p>
-                <p>Website : {myWebsite}</p>
+          
+                    <lightning-formatted-text title="Account Name" value={myName}></lightning-formatted-text> </br>
+                    <lightning-formatted-text title="Industry" value={myIndustry}></lightning-formatted-text> </br>
+                    <lightning-formatted-text title="Rating" value={myRating}></lightning-formatted-text> </br>
+                    <lightning-formatted-email label="Website" value={myWebsite}></lightning-formatted-email> </br>
             </div>
     </lightning-card>
 </template>
