@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="Create Contact" icon-name="standard:contact" >
+        <lightning-layout>
+            <lightning-layout-item size="6" padding="around-small">
+                <lightning-card title="Create a new contact" class="customClass">
+                    <lightning-input name="Contact Name" label="Name" onchange={contactNameChangeHandler}></lightning-input>
+                    <lightning-input name="Contact Phone" label="Phone" onchange={contactPhoneChangeHandler}></lightning-input>
+                    <lightning-input name="Contact Email" label="Email" onchange={contactEmailChangeHandler}></lightning-input>
+                    <lightning-button-group class="around-small">
+                        <lightning-button variant="brand" label="Create Contact" title="titleName" onclick={createContact} class="slds-m-top_x-small"></lightning-button>
+                    </lightning-button-group>
+                </lightning-card>
+            </lightning-layout-item>
+        </lightning-layout>
+    </lightning-card>
+</template>
