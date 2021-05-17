@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="Cases Created in the Last 7 days">
+            <div class="slds-m-around_medium">
+                <ul class="slds-list_ordered">
+                <template if:true={cases.data}>
+                    <template for:each={cases.data} for:item="cas">
+                        <li key={cas.Id}>
+                        <lightning-tile label={cas.Subject}></lightning-tile> 
+                        <p><lightning-badge  label={cas.Reason}></lightning-badge></p>
+                        <p><lightning-formatted-text title="Case Description" value={cas.Description}></lightning-formatted-text></p></br>
+                    </li>
+                    </template>
+                </template>
+            </ul>
+            </div>
+</lightning-card>
+</template>
