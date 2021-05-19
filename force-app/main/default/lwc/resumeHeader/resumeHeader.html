@@ -1,0 +1,45 @@
+<template>
+    
+    
+    
+    
+    <div class="slds-page-header" style="background-color: white;">
+        <div class="slds-page-header__row">
+            <div class="slds-page-header__col-title">
+                <div class="slds-media">
+                    <div class="slds-media__figure">
+                        <lightning-layout-item padding="around-small" >
+                            <lightning-avatar src={myPic} class="slds-avatar_profile-image-large" size="large" variant="circle" >
+                            </lightning-avatar>
+                        </lightning-layout-item>
+                    </div>
+                    <div class="slds-media__body">
+                        <div class="slds-page-header__name">
+                            <div class="slds-page-header__name-title">
+                                <h1>
+                                    <span class="slds-page-header__title slds-truncate" title="Krishnamurthy KA">Krishnamurthy KA</span>
+                                </h1>
+                            </div>
+                        </div>
+                        <p class="slds-page-header__name-meta">Salesforce Developer • Cleantech Solar • Singapore</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    </br>
+    <lightning-card title="Skills">
+        <ul class="slds-list_horizontal slds-has-block-links_space">
+            <template for:each={skills} for:item="s">
+                <li key = {s.id}>
+                    <lightning-badge class="skills" style="color: brown; background-color:white" label={s.Name}></lightning-badge>
+                </li>
+            </template>
+        </ul>   
+    </lightning-card>
+    
+
+    
+</template>

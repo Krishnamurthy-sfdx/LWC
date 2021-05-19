@@ -1,0 +1,7 @@
+
+
+.skills :hover{
+    --sds-c-badge-color-background: rgb(45, 105, 235);
+    color: white;
+}
+
