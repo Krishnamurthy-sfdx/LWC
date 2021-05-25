@@ -6,11 +6,3 @@ export default class MyComponent extends LightningElement {
         myFunction(2,3);
     }
 }
-
-
-
-
-
-
-
-

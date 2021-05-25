@@ -1,3 +1,13 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 05-23-2021
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+  Modifications Log 
+  Ver   Date         Author                               Modification
+  1.0   05-23-2021   ChangeMeIn@UserSettingsUnder.SFDoc   Initial Version
+-->
 <template>
     
     
@@ -34,12 +44,19 @@
         <ul class="slds-list_horizontal slds-has-block-links_space">
             <template for:each={skills} for:item="s">
                 <li key = {s.id}>
-                    <lightning-badge class="skills" style="color: brown; background-color:white" label={s.Name}></lightning-badge>
+                    <lightning-badge class="skills" label={s.Name}></lightning-badge>
                 </li>
             </template>
         </ul>   
     </lightning-card>
-    
+
+    </br>
+    <lightning-card title="Work Experience">
+        <div class="slds-p-horizontal_small slds-text-heading_small">
+            Cleantech Solar
+            <span class="Period">(2017 - Present)</span>
+        </div>
+    </lightning-card>    
 
     
 </template>

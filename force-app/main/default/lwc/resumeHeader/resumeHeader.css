@@ -1,7 +1,13 @@
-
-
-.skills :hover{
-    --sds-c-badge-color-background: rgb(45, 105, 235);
+.skills {
+    --sds-c-badge-color-background: #12B16f;
     color: white;
+    margin-left: 10px;
+    padding: 5px;
 }
 
+.Period {
+    float: right;
+    padding-left: 5px;
+    font-size: medium;
+    font-weight:bold;
+}

@@ -16,6 +16,6 @@ export default class ResumeHeader extends LightningElement {
         Name:"HTML"},
         {id:"6", 
         Name:"CSS"},
-       {id:"7", 
-    Name:"Javascript"}];
-}
+        {id:"7", 
+        Name:"Javascript"}];
+    }
